@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "pixelUnicode";
+    src: url("./fonts/pixel_unicode/Pixel-UniCode.ttf");
+}
+
+body {
+    font-family: "pixelUnicode";
+    font-size  : 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    align-items: center;
+    align-content: center;
+}
+
+.page {
+    max-width: 800px;
+    margin: auto;
+}
+
+.header {
+    background-color: #2E2E2E;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.header > a{
+    float: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
+}
+.header > a:hover, a:visited, a:link, a:active
+{
+    color: white;
+    text-decoration: none;
+}
+.header > a:hover{
+    color: #BBB;
+}
+
+.header > .right{
+    float: right;
+}
+
+.container{
+    width  : 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container > .item{
+    width: 100%;
+    flex: 50%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container > .item:hover{
+    background-color: #DDD;
+    cursor: pointer;
+    width: 100%;
+    flex: 50%;
+}
+
+.container > .item > img {
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 20px; */
+    display: block;
+    width: 80%;
+}
+
+.eq {
+    font-size: 0.8em;
+}
+.frac {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    letter-spacing: 0.001em;
+    text-align: center;
+}
+.frac > span {
+    display: block;
+    padding: 0.1em;
+}
+.frac span.bottom {
+    border-top: 2px solid black;
+}
