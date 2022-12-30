@@ -9,12 +9,12 @@
         <div class="page">
             <div class="header">
                 <span class="title">PixelPhysics</span>
-                <a href="">GitHub</a>
-                <a href="">ray-pH</a>
+                <a href="https://github.com/ray-pH/pixelPhysics">GitHub</a>
+                <a href="https://github.com/ray-pH">ray-pH</a>
                 <span class="right">·</span>
             </div>
             <div class="container">
-                <div class="item">
+                <div class="item" id="div_qWavefun">
                     <div class="eq">
                         iħ
                         <div class="frac">
@@ -41,7 +41,7 @@
                     <img src="./img/holder.jpg">
                     Quantum Wavefunction
                 </div>
-                <div class="item">
+                <div class="item" id="div_Gravity">
                     <div class="eq">
                         ∇ ⋅ g̅
                         &nbsp; =
@@ -58,7 +58,7 @@
                     <img src="./img/holder.jpg">
                     Gravity
                 </div>
-                <div class="item">
+                <div class="item" id="div_fluidFlow">
                     <div class="eq">
                         ρ&nbsp; [
                         &nbsp;
@@ -75,7 +75,7 @@
                     <img src="./img/holder.jpg">
                     Fluid Dynamics
                 </div>
-                <div class="item">
+                <div class="item" id="div_pxElectromagnet">
                     <div class="eq">
                         ∇ × E̅ = 
                         <div class="frac">
@@ -103,4 +103,15 @@
             </div>
         </div>
     </body>
+    <script>
+        let div_qWavefun = document.getElementById("div_qWavefun");
+        let div_Gravity = document.getElementById("div_Gravity");
+        let div_fluidFlow = document.getElementById("div_fluidFlow");
+        //div_qWavefun.onclick = () => {window.open("https://ray-ph.github.io/px_qWavefun", "_self")};
+        //div_Gravity.onclick = () => {window.open("https://ray-ph.github.io/px_pxGravity", "_self")};
+        //div_fluidFlow.onclick = () => {window.open("https://ray-ph.github.io/px_fluidFlow", "_self")};
+        div_qWavefun.onclick = () => {window.open( "./px_qWavefun", "_self")};
+        div_Gravity.onclick = () => {window.open(  "./px_pxGravity", "_self")};
+        div_fluidFlow.onclick = () => {window.open("./px_fluidFlow", "_self")};
+    </script>
 </html>
