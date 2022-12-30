@@ -72,6 +72,7 @@ body {
     /* margin-top: 20px; */
     display: block;
     width: 80%;
+    border: 2px solid #2E2E2E;
 }
 
 .eq {
