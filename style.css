@@ -6,6 +6,7 @@
 body {
     font-family: "pixelUnicode";
     font-size  : 20px;
+    /* font-size  : 2em; */
     font-weight: 600;
     letter-spacing: 1px;
     align-items: center;
@@ -50,7 +51,8 @@ body {
 }
 
 .container > .item{
-    min-width: 400px;
+    min-width: 0;
+    min-width: 360px;
     width: 100%;
     flex: 50%;
     align-items: center;

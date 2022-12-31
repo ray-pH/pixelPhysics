@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
     <meta charset="utf-8" />
-        <title>pixelPhysics</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <div class="page">
-            <div class="header">
-                <span class="title">PixelPhysics</span>
-                <a href="https://github.com/ray-pH/pixelPhysics">GitHub</a>
-                <a href="https://github.com/ray-pH">ray-pH</a>
-                <span class="right">·</span>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#111111">
+    <title>pixelPhysics</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <meta property="og:image" content="https://raw.githubusercontent.com/ray-pH/img/rlogo.png"/>
+    <meta property="og:description" content="Grid Based Physics Simulation"/>
+    <meta property="og:url"content="https://ray-ph.github.io/pixelPhysics"/>
+    <meta property="og:title" content="PixelPhysics">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <span class="title">PixelPhysics</span>
+            <a href="https://github.com/ray-pH/pixelPhysics">GitHub</a>
+            <a href="https://github.com/ray-pH">ray-pH</a>
+            <span class="right">·</span>
+        </div>
+        <div class="container">
+            <div class="item" id="div_qWavefun">
+                <div class="eq">
+                    iħ
+                    <div class="frac">
+                        <span>∂</span>
+                        <span class="bottom">∂t</span>
+                    </div>
+                    | ψ &gt; 
+                    &nbsp; =
+                    &nbsp; [
+                    &nbsp;
+                    <div class="frac">
+                        <span>&nbsp;</span>
+                        <span class="bottom">&nbsp;</span>
+                    </div>
+                    <div class="frac">
+                        <span>ħ²</span>
+                        <span class="bottom">2m</span>
+                    </div> ∇²
+                    &nbsp; +
+                    &nbsp; V̂
+                    &nbsp; ]
+                    &nbsp;| ψ &gt; 
+                </div>
+                <img src="./img/px_qWavefun.png">
+                Quantum Wavefunction
             </div>
-            <div class="container">
-                <div class="item" id="div_qWavefun">
-                    <div class="eq">
-                        iħ
-                        <div class="frac">
-                            <span>∂</span>
-                            <span class="bottom">∂t</span>
-                        </div>
-                        | ψ &gt; 
-                        &nbsp; =
-                        &nbsp; [
-                        &nbsp;
-                        <div class="frac">
-                            <span>&nbsp;</span>
-                            <span class="bottom">&nbsp;</span>
-                        </div>
-                        <div class="frac">
-                            <span>ħ²</span>
-                            <span class="bottom">2m</span>
-                        </div> ∇²
-                        &nbsp; +
-                        &nbsp; V̂
-                        &nbsp; ]
-                        &nbsp;| ψ &gt; 
+            <div class="item" id="div_Gravity">
+                <div class="eq">
+                    ∇ ⋅ g̅
+                    &nbsp; =
+                    &nbsp;
+                    <div class="frac">
+                        <span>&nbsp;</span>
+                        <span class="bottom">&nbsp;</span>
                     </div>
-                    <img src="./img/px_qWavefun.png">
-                    Quantum Wavefunction
+                    ∇² φ
+                    &nbsp; =
+                    &nbsp;
+                    -4πG ρ
                 </div>
-                <div class="item" id="div_Gravity">
-                    <div class="eq">
-                        ∇ ⋅ g̅
-                        &nbsp; =
-                        &nbsp;
-                        <div class="frac">
-                            <span>&nbsp;</span>
-                            <span class="bottom">&nbsp;</span>
-                        </div>
-                        ∇² φ
-                        &nbsp; =
-                        &nbsp;
-                        -4πG ρ
+                <img src="./img/px_pxGravity.png">
+                Gravity
+            </div>
+            <div class="item" id="div_fluidFlow">
+                <div class="eq">
+                    ρ&nbsp; [
+                    &nbsp;
+                    <div class="frac">
+                        <span>∂ u̅</span>
+                        <span class="bottom">∂t</span>
                     </div>
-                    <img src="./img/px_pxGravity.png">
-                    Gravity
+                    &nbsp; +
+                    &nbsp; ( u̅ ⋅ ∇ ) u̅
+                    &nbsp; ]
+                    &nbsp; =
+                    &nbsp; - ∇ p
                 </div>
-                <div class="item" id="div_fluidFlow">
-                    <div class="eq">
-                        ρ&nbsp; [
-                        &nbsp;
-                        <div class="frac">
-                            <span>∂ u̅</span>
-                            <span class="bottom">∂t</span>
-                        </div>
-                        &nbsp; +
-                        &nbsp; ( u̅ ⋅ ∇ ) u̅
-                        &nbsp; ]
-                        &nbsp; =
-                        &nbsp; - ∇ p
+                <img src="./img/px_fluidFlow.png">
+                Fluid Dynamics
+            </div>
+            <div class="item" id="div_pxElectromagnet">
+                <div class="eq">
+                    ∇ × E̅ = 
+                    <div class="frac">
+                        <span>&nbsp;</span>
+                        <span class="bottom">&nbsp;</span>
                     </div>
-                    <img src="./img/px_fluidFlow.png">
-                    Fluid Dynamics
-                </div>
-                <div class="item" id="div_pxElectromagnet">
-                    <div class="eq">
-                        ∇ × E̅ = 
-                        <div class="frac">
-                            <span>&nbsp;</span>
-                            <span class="bottom">&nbsp;</span>
-                        </div>
-                        <div class="frac">
-                            <span>∂B̅</span>
-                            <span class="bottom">∂t</span>
-                        </div>
-                        ; &nbsp;&nbsp;
-                        ∇ × B̅ = 
-                        <div class="frac">
-                            <span>1</span>
-                            <span class="bottom">c²</span>
-                        </div>
-                        <div class="frac">
-                            <span>∂E̅</span>
-                            <span class="bottom">∂t</span>
-                        </div>
+                    <div class="frac">
+                        <span>∂B̅</span>
+                        <span class="bottom">∂t</span>
                     </div>
-                    <img src="./img/holder.jpg">
-                    Electromagnetism
+                    ; &nbsp;&nbsp;
+                    ∇ × B̅ = 
+                    <div class="frac">
+                        <span>1</span>
+                        <span class="bottom">c²</span>
+                    </div>
+                    <div class="frac">
+                        <span>∂E̅</span>
+                        <span class="bottom">∂t</span>
+                    </div>
                 </div>
+                <img src="./img/holder.jpg">
+                Electromagnetism
             </div>
         </div>
-    </body>
-    <script>
-        let div_qWavefun = document.getElementById("div_qWavefun");
-        let div_Gravity = document.getElementById("div_Gravity");
-        let div_fluidFlow = document.getElementById("div_fluidFlow");
-        //div_qWavefun.onclick = () => {window.open("https://ray-ph.github.io/px_qWavefun", "_self")};
-        //div_Gravity.onclick = () => {window.open("https://ray-ph.github.io/px_pxGravity", "_self")};
-        //div_fluidFlow.onclick = () => {window.open("https://ray-ph.github.io/px_fluidFlow", "_self")};
-        div_qWavefun.onclick = () => {window.open( "../px_qWavefun", "_self")};
-        div_Gravity.onclick = () => {window.open(  "../px_pxGravity", "_self")};
-        div_fluidFlow.onclick = () => {window.open("../px_fluidFlow", "_self")};
-    </script>
+    </div>
+</body>
+<script>
+    let div_qWavefun = document.getElementById("div_qWavefun");
+    let div_Gravity = document.getElementById("div_Gravity");
+    let div_fluidFlow = document.getElementById("div_fluidFlow");
+    //div_qWavefun.onclick = () => {window.open("https://ray-ph.github.io/px_qWavefun", "_self")};
+    //div_Gravity.onclick = () => {window.open("https://ray-ph.github.io/px_pxGravity", "_self")};
+    //div_fluidFlow.onclick = () => {window.open("https://ray-ph.github.io/px_fluidFlow", "_self")};
+    div_qWavefun.onclick = () => {window.open( "../px_qWavefun", "_self")};
+    div_Gravity.onclick = () => {window.open(  "../px_pxGravity", "_self")};
+    div_fluidFlow.onclick = () => {window.open("../px_fluidFlow", "_self")};
+</script>
 </html>
