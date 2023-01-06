@@ -3,6 +3,10 @@
     src: url("./fonts/pixel_unicode/Pixel-UniCode.ttf");
 }
 
+.title{
+    margin-left: 5px;
+}
+
 body {
     font-family: "pixelUnicode";
     font-size  : 20px;
