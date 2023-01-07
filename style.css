@@ -98,3 +98,7 @@ body {
 .frac span.bottom {
     border-top: 2px solid black;
 }
+
+.unfinished{
+    color: #999;
+}
