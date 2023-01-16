@@ -7,6 +7,14 @@
     margin-left: 5px;
 }
 
+.desc{
+    text-align : center;
+    margin-top : 20px;
+    margin-bottom : 20px;
+    padding: 20px;
+    background-color: #D0D0D0;
+}
+
 body {
     font-family: "pixelUnicode";
     font-size  : 20px;
